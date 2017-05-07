@@ -163,6 +163,9 @@ function js_min(){
     return gulp.src([
         config.inputDir + '/js/*.js'])
         .pipe(minifyJs())
+        .pipe(rename({
+            suffix: ".min"
+        }))
         .pipe(gulp.dest(config.outputDir + '/js'))
         .pipe(stream());
 };
