@@ -1,0 +1,23 @@
+{
+  "name": "chrome-extension",
+  "description": "chome-extension template",
+  "main": "index.js",
+  "authors": [
+    "Andrew Li"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "font-awesome": "^4.7.0",
+    "semantic-ui": "^2.2.0"
+  }
+}

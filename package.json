@@ -1,0 +1,33 @@
+{
+  "name": "chrome-extension",
+  "version": "0.1.0",
+  "description": "chome-extension template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Li",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.8.0",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-bower": "^0.0.13",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-cli": "^1.2.2",
+    "gulp-connect": "^5.0.0",
+    "gulp-image": "^2.7.5",
+    "gulp-inline-svg": "^1.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-uglify": "^2.1.2",
+    "http-proxy-damon": "^1.15.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp-sass": "^2.3.2",
+    "megatype": "^1.1.2"
+  }
+}

@@ -1,0 +1,49 @@
+/*
+** file: css/main.css
+** description: custom styling for "html/main.html" file
+*/
+
+div#main-outer {
+	width: 180px;
+	border-radius: 5px;
+}
+
+div#main-inner {
+	padding: 0;
+}
+
+.ia-nav {
+	list-style: none;
+	margin: 0;
+}
+
+.ia-nav-item {
+	display: block;
+	width: 100%;
+	padding: 15px;
+	font-size: 0;
+}
+
+.ia-nav-item > a {
+	display: inline-block;
+	font-size: 16px;
+	text-transform: capitalize;
+}
+
+.ia-nav-item span[class^="icon-"] {
+	margin-top: 3px;
+	margin-right: 5px;
+}
+
+.ia-nav-item .onoffswitch {
+	float: right;
+	right: 35px;
+	top: 6px;
+}
+.ia-nav-item .onoffswitch .onoffswitch-switch {
+	height: 15px;
+}
+
+.ia-nav-divider {
+	border: 1px solid #999;
+}
