@@ -88,6 +88,10 @@ function liveReload(){
         proxy.web(req, res);
     });
 
+    httpServer.on('upgrade', function(req, socket, head){
+        proxy.ws(req, socket, head);
+    });
+
     proxyServer.on('upgrade', function(req, socket, head){
         proxy.ws(req, socket, head);
     });
