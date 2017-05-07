@@ -12,6 +12,7 @@ const image = require('gulp-image');
 var inlineSvg = require('gulp-inline-svg');
 var svgmin = require('gulp-svgmin');
 var fs    = require('fs');
+var sourcemaps   = require('gulp-sourcemaps');
 var stream = browserSync.stream;
 var reload = browserSync.reload;
 
@@ -97,7 +98,6 @@ function liveReload(){
 
 
 function sass(){
-    var sourcemaps   = require('gulp-sourcemaps');
     var autoprefixer = require('gulp-autoprefixer');
     var autoprefixerOptions = {
         browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
@@ -162,10 +162,12 @@ function image_min(){
 function js_min(){
     return gulp.src([
         config.inputDir + '/js/*.js'])
+        .pipe(sourcemaps.init())
         .pipe(minifyJs())
         .pipe(rename({
             suffix: ".min"
         }))
+        .pipe(sourcemaps.write( '.' ))
         .pipe(gulp.dest(config.outputDir + '/js'))
         .pipe(stream());
 };
